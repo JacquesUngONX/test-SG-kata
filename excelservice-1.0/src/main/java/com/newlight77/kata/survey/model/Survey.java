@@ -1,8 +1,8 @@
 package com.newlight77.kata.survey.model;
 
-import lombok.Data;
-
 import java.util.List;
+
+import lombok.Data;
 
 @Data
 public class Survey {
@@ -11,5 +11,17 @@ public class Survey {
     private String client;
     private Address clientAddress;
     private List<Question> questions;
+
+    public String getId() {
+        return this.id;
+    }
+
+    public String getClient() {
+        return this.client;
+    }
+
+    public Address getClientAddress() {
+        return this.clientAddress;
+    }
 }
 

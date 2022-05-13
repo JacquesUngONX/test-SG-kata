@@ -7,4 +7,12 @@ public class AddressStatus {
     private String id;
     private Address address;
     private Status status;
+
+    public Address getAddress() {
+        return this.address;
+    }
+
+    public Status getStatus() {
+        return this.status;
+    }
 }
